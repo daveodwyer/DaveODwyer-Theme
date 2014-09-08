@@ -27,7 +27,7 @@ get_header();
 		            } ?>		  
 		            <div class="post-meta">
 		                <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-		                <span class="date-author">Posted on <?php the_time('l dS M Y'); ?> by <a href="/about"><?php the_author(); ?></a></span>
+		                <span class="date-author">Posted on <?php the_time('l dS M Y'); ?></a></span>
 		            </div>
 
 		            <div class="post-content">

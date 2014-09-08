@@ -40,6 +40,21 @@ get_header();
 	endwhile; 
 	wp_reset_query();
 ?>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'daveodwyer'; // Required - Replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 	<br class="clear" />
 	</div>
 
@@ -56,7 +71,7 @@ get_header();
 			<div class="other-posts-sidebar">
 				<a href="<?php the_permalink(); ?>" class="list-group-iten">
 					<h4 class="list-group-item-heading"><?php the_title();?></h4>
-					<p class="list-group-item-text">Posted on <?php the_time('l dS M Y'); ?> by <?php the_author(); ?></p>
+					<p class="list-group-item-text">Posted on <?php the_time('l dS M Y'); ?></p>
 				</a>
 			</div>
     	<?php

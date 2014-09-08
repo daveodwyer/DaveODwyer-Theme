@@ -10,6 +10,16 @@ body {
     padding-bottom: 60px;
 }
 
+.post-content p {
+  margin: 0 0 1.8em 0;
+  line-height: 1.8em;
+  max-width: 42em;
+}
+
+.post-content pre {
+  background-color: #fff;
+}
+
 .navbar-nav>li.open>.dropdown-toggle, #main-menu>li.open>.dropdown-toggle, .navbar-nav>li.open.active>.dropdown-toggle, #main-menu>li.open.active>.dropdown-toggle, .navbar-nav>li.open>.dropdown-toggle, #main-menu>li.open>.dropdown-toggle, .navbar-nav>li.open.active>.dropdown-toggle, #main-menu>li.open.active>.dropdown-toggle {
     background: #fff;
     color: #1b1b1b;
@@ -87,13 +97,14 @@ body .navbar.navbar-inverse {
 }
 
 .post-meta {
-    margin-bottom: 10px;   
+    margin-bottom: 1.8em;  
 }
 
 .post-meta a h2 {
     margin: 0;   
     font-family: 'Questrial', sans-serif;
     text-decoration: none;
+    font-size: 2.8em;
 }
 
 .post-image {
@@ -133,6 +144,12 @@ body .navbar.navbar-inverse {
 	-moz-box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
 	-webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
 }
+
+.date-author {
+  color: #999;
+  font-style: italic;
+}
+
 	.date p {
 		font-family: Helvetica, sans-serif;
 		font-size: 55px; text-align: center; color: #9e9e9e; 
@@ -166,7 +183,8 @@ body .navbar.navbar-inverse {
     padding: 0;
 }
 
+
 /* Popular Posts Plugin */
 .wpp-comments { display: none; }
 .wpp-list li { font-size: 15px; }
-.wpp-list { margin: 0; padding: 0;}
+.wpp-list { list-style-type: none; margin: 0; padding: 0;}

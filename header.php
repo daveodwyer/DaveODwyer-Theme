@@ -12,6 +12,9 @@
         <link href='http://fonts.googleapis.com/css?family=Quantico:400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
 
+	<?php include_once("analytics.php"); ?>
+
+
     </head>
     
     <body>
@@ -55,14 +58,14 @@
 
                             </li>
                             
-                            <li class="dropdown">
+                           <!--  <li class="dropdown">
 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Search <b class="caret"></b></a>
                                 <ul class="dropdown-menu searchboxmenu" role="menu">
                                     <li><input type="text" class="form-control searchbox" placeholder="Search"></li>
                                 </ul>
 
-                            </li>
+                            </li> -->
 
                             <li><a href="<?php bloginfo('wpurl'); ?>/about">About</a></li>
                             <li><a href="<?php bloginfo('wpurl'); ?>/contact">Contact</a></li>

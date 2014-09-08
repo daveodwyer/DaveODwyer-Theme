@@ -27,7 +27,7 @@ get_header();
 	            } ?>		            
 	            <div class="post-meta">
 	                <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-	                <span class="date-author">Posted on <?php the_time('l dS M Y'); ?> by <a href="/about"><?php the_author(); ?></a></span>
+	                <span class="date-author">Posted on <?php the_time('l dS M Y'); ?></a></span>
 	            </div>
 
 	            <div class="post-content">
@@ -41,6 +41,21 @@ get_header();
 	endwhile; 
 	wp_reset_query();
 ?>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'daveodwyer'; // Required - Replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 	<br class="clear" />
 	</div>
 
@@ -107,7 +122,6 @@ get_header();
 		</div>
 
 <?php endif; ?>
-    
-	</div>
 
+</div>
 <?php get_footer(); ?>
